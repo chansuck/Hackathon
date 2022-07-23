@@ -5,7 +5,7 @@ import { ThemeProvider } from "@mui/material";
 import * as React from 'react';
 import { appTheme } from "./themes/theme";
 import Button from "@mui/material/Button";
-import Box from "@mui/material/Box";
+import RequirementList from "./components/requirement-list";
 
 function App() {
   const [activeForm, setActiveForm] = React.useState(false);
@@ -31,8 +31,8 @@ function App() {
         <p>Pathways: Mobile Food Application</p>
       {!activeForm && (<Card className="initial-card-box">
         <h1>Sell Mobile Food in Calgary</h1>
-
-
+        <p className="max-width">We are excited that you are here. Whether you want to build a food truck empire or just want to share you grandmother's ribs with your community, this is where you start. Things you will want before getting started:</p>
+        <RequirementList className="requirement-list-box"/>
         <Button variant="contained" onClick={openForm}>Get Started Building Your Dreams</Button>
       </Card>)}
       {activeForm && (<Card className="card-box">

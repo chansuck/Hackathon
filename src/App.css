@@ -52,3 +52,11 @@
     transform: rotate(360deg);
   }
 }
+
+.requirement-list-box{
+  margin-left: 20%;
+}
+
+.max-width {
+  max-width: 400px;
+}
